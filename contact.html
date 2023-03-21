@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:
+wght@100;200;300;400;600;700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,
+700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sarala&display=swap" rel="stylesheet">
+    <title>Project Univercity</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/elvis.logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="course.html">PRODUTOS</a></li>
+                    <li><a href="blog.html">DÚVIDAS</a></li>
+                    <li><a href="contact.html">CONTATO</a></li>
+                    <li><a href="about.html">SOBRE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contato</h1>
+    </section>
+
+
+    <!--------contato--------->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.6968883950226!2d-34.95813195105715!3d-8.132309383633643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1de356d82d59%3A0xd193c1c6e1ae6c04!2sR.%20Pitangueira%2C%2067%20-%20COHAB%2C%20Jaboat%C3%A3o%20dos%20Guararapes%20-%20PE%2C%2051320-520!5e0!3m2!1spt-BR!2sbr!4v1679248782284!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Rua pitangueira, n: 67</h5>
+                        <p>Cohab Ibura</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>81 98766-1976</h5>
+                        <p>Telefone celular</p>
+                    </span>
+                </div>
+
+                <div>
+                    <a href="mailto:elvis-andrade15@hotmail.com"><i class="fa fa-envelope-o"></i></a>
+                    <span>
+                        <a href="mailto:elvis-andrade15@hotmail.com"><h5>elvis-andrade15@hotmail.com</h5></a>
+                        <p>Email, copie ou clique no link</p>
+                    </span>
+                </div>
+
+                <div>
+                    <a href="https://wa.me/qr/EVG52ABJM5ZJH1"><i class="fa fa-whatsapp"></i></a>
+                    <span>
+                        <a href="https://wa.me/qr/EVG52ABJM5ZJH1"><h5>WhatsApp</h5></a>
+                        <p>Clique no ícone e entre em<br>contato diretamente comigo</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Digite seu nome" required>
+                    <input type="email" name="email" placeholder="Digite o seu Email" required>
+                    <input type="text" name="subject" placeholder="Digite o assunto" required>
+                    <textarea rows="8" name="message" placeholder="Menssagem" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Enviar Mensagem</button>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+<section class="footer">
+    <h4>Sobre nós</h4>
+        <p>Somos uma empresa séria, que se dedica a fazer o nosso<br>
+            para os nossos clientes.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+</section>
+
+
+
+    <!-------------------------Menu javascript----------------------->
+
+    <script language="javaScript">
+        var navLinks = document.getElementById('navLinks');
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+        
+    </script>
+
+</body>
+</html>
